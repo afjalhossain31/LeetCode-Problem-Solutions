@@ -1,16 +1,13 @@
 var combinationSum = function(candidates, target) {
     let result = [];
-
     function backtrack(start, current, sum) {
         if (sum === target) {
             result.push([...current]);
             return;
         }
-
         if (sum > target) {
             return;
         }
-
         for (let i = start; i < candidates.length; i++) {
             current.push(candidates[i]);
 
@@ -19,9 +16,7 @@ var combinationSum = function(candidates, target) {
             current.pop();
         }
     }
-
     backtrack(0, [], 0);
-
     return result;
 };
 
