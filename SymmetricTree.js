@@ -19,10 +19,8 @@ var isSymmetric = function (root) {
         queue.push(left.right);
         queue.push(right.left);
     }
-
     return true;
 };
-
 console.log(isSymmetric({
     val: 1,
     left: {
