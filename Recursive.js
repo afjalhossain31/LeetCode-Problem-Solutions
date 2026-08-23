@@ -10,7 +10,7 @@ var maxDepth = function(root) {
 };
 console.log(maxDepth(root));
 
-// Example usage:
+
 // Assuming you have a TreeNode class defined as follows:
 // class TreeNode {
 //     constructor(val, left = null, right = null) {
@@ -26,6 +26,7 @@ console.log(maxDepth(root));
 //     9  20
 //       /  \
 //      15   7
+
 // let root = new TreeNode(3);
 // root.left = new TreeNode(9);
 // root.right = new TreeNode(20);
